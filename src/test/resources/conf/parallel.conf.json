@@ -4,25 +4,25 @@
 	"key": "YOUR_ACCESS_KEY",
 
 	"capabilities": {
-		"build": "Java Selenide Parallel"
+		"build": "Selenide - Java [Parallel]"
 	},
 
 	"environments": {
-		"chrome": {
-		    "platform": "windows 10",
-			"browserName": "chrome",
-			"version":"latest",
+		"Chrome": {
+		    "platformName": "Windows 11",
+			"browserName": "Chrome",
+			"browserVersion":"98.0",
 			"geoLocation":"US"
 		},
-		"firefox": {
-			"platform": "windows 8.1",
-			"browserName": "firefox",
-			"version":"latest",
+		"Firefox": {
+			"platformName": "Windows 11",
+			"browserName": "Firefox",
+			"browserVersion":"latest",
 			"geoLocation":"US"
 		},
-		"safari": {
-			"platform": "macOS Mojave",
-			"browserName": "safari",
+		"Safari": {
+			"platformName": "MacOS Monterey",
+			"browserName": "Safari",
 			"version":"latest",
 			"geoLocation":"US"
 		}

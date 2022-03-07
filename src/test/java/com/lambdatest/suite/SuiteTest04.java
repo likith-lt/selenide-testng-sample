@@ -16,17 +16,34 @@ public class SuiteTest04 extends LambdaTestSetup {
     @Test
     public void test() throws Exception {
 
-        open("https://lambdatest.github.io/sample-todo-app/");
+        System.out.println("Loading Url");
+        open("https://stage-demo.lambdatest.com/");
 
-        $(By.name("li1")).click();
-        $(By.name("li2")).click();
-        $(By.id("sampletodotext")).setValue("Complete LambdaTest Tutorial.").pressEnter();
-
-        String newElem = $(By.xpath("/html/body/div/div/div/ul/li[6]/span")).getText();
-        sleep(2000);
-
-        Assert.assertEquals(newElem, "Complete LambdaTest Tutorial.");
-        status = "passed";
+            // Let's select the location
+            $(By.id("headlessui-listbox-button-1")).click();
+            $(By.id("Bali")).click();
+            System.out.println("Location is selected as Bali.");
+            // Let's select the number of guests
+            $(By.id("headlessui-listbox-button-5")).click();
+            $(By.id("2")).click();
+            System.out.println("Number of guests are selected.");
+            $(By.xpath("//*[@id='search']")).click();
+            Thread.sleep(3000);
+            // Let's select one of the hotels for booking
+            $(By.id("reserve-now")).click();
+            Thread.sleep(3000);
+            $(By.id("proceed")).click();
+            Thread.sleep(3000);
+            System.out.println("Booking is confirmed.");
+            // Let's download the invoice
+            boolean exec = $(By.id("invoice")).isDisplayed();
+            if(exec){
+                status = "passed";
+                $(By.id("invoice")).click();
+                System.out.println("Tests are run successfully!");
+            }
+            else
+                status="failed";
     }
 
 }

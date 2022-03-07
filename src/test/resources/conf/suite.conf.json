@@ -4,32 +4,32 @@
 	"key": "YOUR_ACCESS_KEY",
 
   "capabilities": {
-    "build": "Java Selenide Suite"
+    "build": "Selenide - Java [Suite]"
   },
 
   "environments": {
-   "chrome": {
-		    "platform": "windows 10",
-			"browserName": "chrome",
-			"version":"latest",
+   "Chrome": {
+		    "platformName": "Windows 11",
+			"browserName": "Chrome",
+			"browserVersion":"latest",
 			"geoLocation":"US"
 		},
-	"firefox": {
-			"platform": "windows 8.1",
-			"browserName": "firefox",
-			"version":"latest",
+	"Firefox": {
+			"platformName": "Windows 11",
+			"browserName": "Firefox",
+			"browserVersion":"latest",
 			"geoLocation":"US"
 		},
-	"safari": {
-			"platform": "macOS Mojave",
-			"browserName": "safari",
-			"version":"latest",
+	"Safari": {
+			"platformName": "MacOS Monterey",
+			"browserName": "Safari",
+			"browserVersion":"latest",
 			"geoLocation":"US"
 		},
-    "edge": {
-      		"platform": "windows 10",
-		     "browserName": "MicrosoftEdge",
-			 "version":"latest",
+    "Edge": {
+      		"platformName": "Windows 11",
+		     "browserName": "Edge",
+			 "browserVersion":"latest",
 			 "geoLocation":"US"
     }
   }

@@ -4,14 +4,15 @@
 	"key": "YOUR_ACCESS_KEY",
 
 	"capabilities": {
-		"build": "Java Selenide Single"
+		"build": "Selenide - Java [Single]",
+		"name" : "Single-test"
 	},
 
 	"environments": {
-		"chrome": {
-		    "platform": "windows 10",
-			"browserName": "chrome",
-			"version":"latest",
+		"Chrome": {
+		    "platformName": "Windows 11",
+			"browserName": "Chrome",
+			"browserVersion":"latest",
 			"geoLocation":"US"
 		}
 	}

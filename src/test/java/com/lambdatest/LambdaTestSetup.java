@@ -52,7 +52,7 @@ public class LambdaTestSetup {
 										: pair.getValue().toString()));
 			}
 		}
-		capabilities.setCapability("name", this.getClass().getName());
+		capabilities.setCapability("name", "Selenide Demo Test");
 
 		username = System.getenv("LT_USERNAME");
 		if (username == null) {

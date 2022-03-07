@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Parallel" thread-count="3" parallel="tests">
-	<test name="SingleTestChrome">
-    <parameter name="config" value="parallel.conf.json"/>
-    <parameter name="environment" value="chrome"/>
+  <test name="SingleTestChrome">
+    <parameter name="config" value="parallel.conf.json" />
+    <parameter name="environment" value="Chrome" />
     <classes>
-      <class name="com.lambdatest.SingleTest"/>
+      <class name="com.lambdatest.SingleTest" />
     </classes>
-	</test>
+  </test>
 
-	<test name="SingleTestFirefox">
-    <parameter name="config" value="parallel.conf.json"/>
-    <parameter name="environment" value="firefox"/>
+  <test name="SingleTestFirefox">
+    <parameter name="config" value="parallel.conf.json" />
+    <parameter name="environment" value="Firefox" />
     <classes>
-      <class name="com.lambdatest.SingleTest"/>
+      <class name="com.lambdatest.SingleTest" />
     </classes>
-	</test>
+  </test>
 
-	<test name="SingleTestSafari">
-    <parameter name="config" value="parallel.conf.json"/>
-    <parameter name="environment" value="safari"/>
+  <test name="SingleTestSafari">
+    <parameter name="config" value="parallel.conf.json" />
+    <parameter name="environment" value="Safari" />
     <classes>
-      <class name="com.lambdatest.SingleTest"/>
+      <class name="com.lambdatest.SingleTest" />
     </classes>
-	</test>
+  </test>
 </suite>
